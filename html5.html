@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>
+    Formular UNTOLD
+  </title>
+</head>
+
+<body>
+  <div>
+    <h1> Formular Voluntariat UNTOLD </h1>
+    <p>Completează acest formular dacă vrei să participi ca voluntar la ediția UNTOLD din August 2023! Vei avea parte de:</p>
+    <ul>
+      <li>Distracție</li>
+      <li>Acces nelimitat pe toată perioada festivalului</li>
+      <li>Apă nelimitat</li>
+      <li>Brățară acces VIP + Backstage</li>
+      <li>Experiențe frumoase</li>
+    </ul>
+  </div>
+  <form action="/action_page.php">
+    <table id="T1" style="border: 2px solid black;">
+      <tr>
+        <th style="background-color: #d095fc;">
+          <span style="color:rgb(255, 255, 255); font-size: large;">Date Personale</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <table id="T2">
+            <tr>
+              <td><label for="nume_aplicant">Nume:</label></td>
+              <td colspan="3"><input size="50" type="text" id="nume_aplicant" name="nume_aplicant" required></td>
+              <td><label for="data_apicari">Data:</label></td>
+              <td><input type="date" id="data_apicari" name="data_apicari" required></td>
+            </tr>
+            <tr>
+              <td>Sex:</td>
+              <td colspan="5">
+                <div id="sex">
+                  <input type="radio" id="feminin" name="sex" value="F" required>
+                  <label for="feminin">F</label>
+                  <input type="radio" id="masculin" name="sex" value="M" required>
+                  <label for="masculin">M</label>
+                  <input type="radio" id="other" name="sex" value="O" required>
+                  <label for="other">Other:</label>
+                  <input size="10" type="text" id="other_text" name="other" value="Non-Binary" readonly>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="adresa">Adresa:</label></td>
+              <td colspan="5"><input maxlength="100" size="75" type="text" id="adresa" name="adresa"></td>
+            </tr>
+            <tr>
+              <td><label for="oras">Oraș:</label></td>
+              <td><input type="text" id="oras" name="oras" required></td>
+              <td><label for="judet">Județ:</label></td>
+              <td><input type="text" id="judet" name="judet" required></td>
+              <td><label for="cod_postal">Cod Poștal:</label></td>
+              <td><input size="12" type="text" id="cod_postal" name="cod_postal" disabled></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td colspan="5"><input type="text" id="email" name="email"></td>
+            </tr>
+            <tr>
+              <td><label for="telefon">Telefon:</label></td>
+              <td colspan="5"><input type="text" id="telefon" name="telefon"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><label for="files">Atașează poză portret și buletin:</label></td>
+              <td colspan="4"><input type="file" id="files" name="files" multiple></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <th style="background-color: #1283fc;">
+          <span style="color:rgb(255, 255, 255); font-size: large;">Repartizare</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <fieldset>
+            <legend><strong>Departamente:</strong></legend>
+            <table id="T3">
+              <tr>
+                <td colspan="2"><label>Alege 3 departamente în care vrei repartizare:</label></td>
+              </tr>
+              <tr>
+                  <td style="width: 120px;"><label for="departamente1">Opțiunea 1:</label></td>
+                  <td>
+                    <select name="departamente" id="departamente1">
+                      <option value="logistica">Logistică</option>
+                      <option value="backstage">Backstage</option>
+                      <option value="vip">Zona VIP</option>
+                      <option value="divertisment">Divertisment</option>
+                      <option value="acces">Acces</option>
+                      <option value="bratari">Brățări</option>
+                      <option value="bilete">Stand bilete</option>
+                      <option value="start" selected>--select--</option>
+                    </select>
+                  </td>
+              </tr>
+              <tr>
+                <td><label for="departamente2">Opțiunea 2:</label></td>
+                <td>
+                  <select name="departamente" id="departamente2">
+                    <option value="logistica">Logistică</option>
+                    <option value="backstage">Backstage</option>
+                    <option value="vip">Zona VIP</option>
+                    <option value="divertisment">Divertisment</option>
+                    <option value="acces">Acces</option>
+                    <option value="bratari">Brățări</option>
+                    <option value="bilete">Stand bilete</option>
+                    <option value="start" selected>--select--</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="departamente3">Opțiunea 3:</label></td>
+                <td>
+                  <select name="departamente" id="departamente3">
+                    <option value="logistica">Logistică</option>
+                    <option value="backstage">Backstage</option>
+                    <option value="vip">Zona VIP</option>
+                    <option value="divertisment">Divertisment</option>
+                    <option value="acces">Acces</option>
+                    <option value="bratari">Brățări</option>
+                    <option value="bilete">Stand bilete</option>
+                    <option value="start" selected>--select--</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><br></td>
+              </tr>
+              <tr>
+                <td style="vertical-align: top;"><label for="experiente_anterioare">Experiențe anterioare:</label></td>
+                <td><textarea id="experiente_anterioare" name="experiente" rows="5" cols="50"></textarea></td>
+              </tr>
+              <tr>
+                <td colspan="2"><br></td>
+              </tr>
+              <tr>
+                <td><label for="cate_zile">Câte zile ești dispus să voluntariezi?:</label></td>
+                <td><input type="number" id="cate_zile" name="cate_zile" step="1" min="1" max="4"></td>
+              </tr>
+            </table>
+          </fieldset>
+        </td>
+      </tr>
+      <tr>
+        <th style="background-color: orange;">
+          <span style="color:rgb(255, 255, 255); font-size: large;">Termeni și Condiții</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <table id="T4">
+            <tr>
+              <td colspan="2">
+                <ol type="I">
+                  <li>Sunt de acord cu prelucrarea datelor cu caracter personal.</li>
+                  <li>Îmi exprim acordul de a fi contactat/ă:
+                    <ul>
+                      <li>telefonic</li>
+                      <li>prin email</li>
+                    </ul>
+                  </li>
+                  <li>Afirm că:
+                    <ol type="A" start="24">
+                      <li>Datele completate sunt corecte;</li>
+                      <li>Am vârsta de peste 18 ani;</li>
+                      <li>Am luat la cunoștință implicațiile venite odată cu înscrierea.</li>
+                    </ol>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="checkbox" id="acord" name="acord" value="Acord">
+                <label for="acord"> Am citit și sunt de acord.</label><br>
+                <input type="checkbox" id="newsletter" name="newsletter" value="Newsletter" checked>
+                <label for="newsletter"> Doresc să primesc newsletter.</label><br>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <img src="untold2023.jpg" alt="Untold Banner" width="224" height="112">
+              </td>
+            </tr>
+            <tr>
+              <td><a href="https://untold.com/" target="_blank">Vizitează <b>UNTOLD!</b></a></td>
+              <td><button type="button" onclick="alert('Formular trimis!')">Trimite</button></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
